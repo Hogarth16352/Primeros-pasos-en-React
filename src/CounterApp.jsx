@@ -5,7 +5,8 @@ import PropTypes from 'prop-types';
 
 export const CounterApp = ( { value } ) => {
 
-    console.log('render');
+    // console.log('render');
+    //API... FECTH...
 
     const [ counter , setCounter ] = useState( value )
     
@@ -30,7 +31,7 @@ export const CounterApp = ( { value } ) => {
         <button onClick={ handleSubstract }>
             -1
         </button>
-        <button onClick={ handleReset }>
+        <button aria-label='btn-reset' onClick={ handleReset }>
             Reset
         </button>
     </>
